@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="author" content="kimdohee">
+    <meta name="title" content="YOON's portfolio">
+    <meta name="description" content="YOON's portfolio">
+    <meta name="keywords" content="">
+    <meta property="og:type" content="webpage" data-dynamic="true">
+    <meta property="og:title" content="YOON" data-dynamic="true">
+    <meta property="og:description" content="YOON portfolio" data-dynamic="true">
+    <meta property="og:url" content="https://yoon86.github.io/" data-dynamic="true">
+    <title>Yoonsoyoung's portfolio</title>
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="yoon.css" />
+	<link rel="stylesheet" type="text/css" href="file:///D:/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/css/jquery.fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="file:///D:/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80/js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
+
+				'afterLoad': function(anchorLink, index){
+					if(index == 2){
+						$('#iphone3, #iphone2, #iphone4').addClass('active');
+					}
+				},
+
+				'onLeave': function(index, nextIndex, direction){
+					if (index == 3 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 3 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', nextIndex == 4);
+					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="wrapr">
+    <header>
+        <h1><a href="./index.html">YOON</a></h1>
+    </header>
+    <main class="container" id="fullpage">
+        <section class="first"  id="section0">
+            <div class="saying">
+                <p class="text">"나는 깊게 파기 위해 넓게 파기 시작했다"</p>
+                <p class="name">- Benedict (Baruch) de Spinoza -</p>
+            </div>
+        </section>
+        <section class="second" id="section1">
+            <div class="contents" id="contents">
+                <div id="filters" class="button-group">
+                    <button class="button is-checked" data-filter="*">show all</button>
+                    <button class="button" data-filter=".home">HOME PAGE</button>
+                    <button class="button" data-filter=".shop">SHOPPING MALL</button>
+                    <button class="button" data-filter=".publish, .design">PUBLISH AND DESIGN</button>
+                    <button class="button" data-filter=".web">WEB DESIGN</button>
+                </div>
+                <h2>Sort</h2>
+                <div id="sorts" class="button-group">
+                    <button class="button is-checked" data-sort-by="original-order">original order</button>
+                    <button class="button" data-sort-by="name">name</button>
+                    <button class="button" data-sort-by="category">category</button>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="element-item home" data-category="home">
+                    <h3 class="name">울림엔터테인먼트</h3>
+                </div>
+                <div class="element-item home shop" data-category="shop">
+                    <h3 class="name">몬스타엑스</h3>
+                </div>
+                <div class="element-item shop publish design" data-category="shop">
+                    <h3 class="name">사운드웨이브</h3>
+                </div>
+                <div class="element-item shop publish design" data-category="shop">
+                    <h3 class="name">젤리피쉬쇼핑몰</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">정샘물</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">프롬비기닝</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">방탄소년단 쇼핑몰</h3>
+                </div>
+                <div class="element-item web" data-category="web">
+                    <h3 class="name">라곰</h3>
+                </div>
+                <div class="element-item shop publish design" data-category="shop">
+                    <h3 class="name">스위티스푼 리뉴얼 퍼블리셔 및 디자인</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">구름</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">라디언스</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">블링샵</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">토키오</h3>
+                </div>
+                <div class="element-item shop" data-category="shop">
+                    <h3 class="name">스니커매니아</h3>
+                </div>
+            </div>
+        </section>
+        <section class="third" id="section02">
+            섹션03
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; DOHEE Per. 2017 All Rights Reserved.</p>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+<script type="text/javascript">
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+    number: '.number parseInt',
+    category: '[data-category]',
+    weight: function( itemElem ) {
+      var weight = $( itemElem ).find('.weight').text();
+      return parseFloat( weight.replace( /[\(\)]/g, '') );
+    }
+  }
+});
+
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    //return name.match( /ium$/ );
+  }
+};
+
+// bind filter button click
+$('#filters').on( 'click', 'button', function() {
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
+});
+
+// bind sort button click
+$('#sorts').on( 'click', 'button', function() {
+  var sortByValue = $(this).attr('data-sort-by');
+  $grid.isotope({ sortBy: sortByValue });
+});
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
+});
+$(document).ready(function(){
+    $('#fullpage').fullpage({
+        anchors: ['01','02','03','04','05','06'],
+		navigation: true,
+		navigationPosition: 'right',
+		navigationTooltips: [''],
+        fitToSectionDelay: 0,
+        fitToSection: false,
+        scrollingSpeed: 800,
+        easing: 'easeInExpo',
+        'afterLoad': function(anchorLink, index){
+
+            if(index == 1){
+                $('#section1_bg').addClass('fade');
+                /*
+                $('#section1_title01').delay(300).fadeIn(1000);
+                $('#section1_title02').delay(600).fadeIn(800);
+                $('#section1_title03').delay(900).fadeIn(800);
+                $('#section1_title04').delay(1200).fadeIn(800);
+                */
+            }	
+            if(index == 2){
+                $('#section2_bg').addClass('fade');
+                /*
+                $('#section2_title01').delay(0).fadeIn(800);
+                $('#section2_title02').delay(200).fadeIn(800);
+                $('#section2_title03').delay(300).fadeIn(800);
+                $('#section2_title04').delay(500).fadeIn(800);
+                */
+            }
+            if(index == 3){
+                $('#section3_bg').addClass('fade');
+                /*
+                $('#section3_title01').delay(0).fadeIn(800);
+                $('#section3_title02').delay(200).fadeIn(800);
+                $('#section3_title03').delay(400).fadeIn(800);
+                $('#section3_title04').delay(600).fadeIn(800);
+                */
+            }	
+        },
+
+	});
+});
+</script>
+</body>
+
+</html>
