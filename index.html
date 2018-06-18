@@ -18,7 +18,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" type="text/css">
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
 	  <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
-	  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 	  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/js/jquery.fullPage.js"></script>
 	  <script type="text/javascript">
@@ -31,24 +32,6 @@
     				'navigationPosition': 'right',
     				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 
-    				'afterLoad': function(anchorLink, index){
-    					if(index == 2){
-    						$('#iphone3, #iphone2, #iphone4').addClass('active');
-    					}
-    				},
-
-    				'onLeave': function(index, nextIndex, direction){
-    					if (index == 3 && direction == 'down'){
-    						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
-    					}
-    					else if(index == 3 && direction == 'up'){
-    						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
-    					}
-
-    					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
-    					$('#staticImg').toggleClass('moveDown', nextIndex == 4);
-    					$('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
-    				}
     			});
     		});
 	  </script>
@@ -59,13 +42,13 @@
         <h1><a href="./index.html">YOON</a></h1>
     </header>
     <main class="container" id="fullpage">
-        <section class="first"  id="section0">
+        <section class="section first"  id="section0">
             <div class="saying">
                 <p class="text">"나는 깊게 파기 위해 넓게 파기 시작했다"</p>
                 <p class="name">- Benedict (Baruch) de Spinoza -</p>
             </div>
         </section>
-        <section class="second" id="section1">
+        <section class="section second" id="section1">
             <div class="contents" id="contents">
                 <div id="filters" class="button-group">
                     <button class="button is-checked" data-filter="*">show all</button>
@@ -126,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section class="third" id="section02">
+        <section class="section third" id="section02">
             섹션03
         </section>
     </main>
