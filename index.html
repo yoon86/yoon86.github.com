@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
 	  <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
 
-	  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <script src="/js/jquery.min.js"></script>
 
-	  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	  <script src="/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/js/jquery.fullPage.js"></script>
 	  <script type="text/javascript">
     		$(document).ready(function() {
@@ -120,7 +120,7 @@
     </footer>
 </div>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <script src="/js/isotope.pkgd.js"></script>
 
 
@@ -177,30 +177,7 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
-$(document).ready(function(){
-    $('#fullpage').fullpage({
-        anchors: ['01','02','03','04','05','06'],
-		  navigation: true,
-		navigationPosition: 'right',
-		navigationTooltips: [''],
-        fitToSectionDelay: 0,
-        fitToSection: false,
-        scrollingSpeed: 800,
-        easing: 'easeInExpo',
-        'afterLoad': function(anchorLink, index){
-            if(index == 1){
-                $('#section1_bg').addClass('fade');
-            }
-            if(index == 2){
-                $('#section2_bg').addClass('fade');
-            }
-            if(index == 3){
-                $('#section3_bg').addClass('fade');
-            }
-        },
 
-	});
-});
 </script>
 </body>
 
