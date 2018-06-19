@@ -26,12 +26,6 @@
 	  <script type="text/javascript">
     		$(document).ready(function() {
     			$('#fullpage').fullpage({
-    				'verticalCentered': false,
-    				'css3': true,
-    				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
-    				'navigation': true,
-    				'navigationPosition': 'right',
-    				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 
     			});
     		});
@@ -180,44 +174,24 @@ $('.button-group').each( function( i, buttonGroup ) {
 $(document).ready(function(){
     $('#fullpage').fullpage({
         anchors: ['01','02','03','04','05','06'],
-		navigation: true,
-		navigationPosition: 'right',
-		navigationTooltips: [''],
+		    navigation: true,
+		    navigationPosition: 'right',
+		    navigationTooltips: [''],
         fitToSectionDelay: 0,
         fitToSection: false,
         scrollingSpeed: 800,
         easing: 'easeInExpo',
         'afterLoad': function(anchorLink, index){
-
             if(index == 1){
                 $('#section1_bg').addClass('fade');
-                /*
-                $('#section1_title01').delay(300).fadeIn(1000);
-                $('#section1_title02').delay(600).fadeIn(800);
-                $('#section1_title03').delay(900).fadeIn(800);
-                $('#section1_title04').delay(1200).fadeIn(800);
-                */
             }
             if(index == 2){
                 $('#section2_bg').addClass('fade');
-                /*
-                $('#section2_title01').delay(0).fadeIn(800);
-                $('#section2_title02').delay(200).fadeIn(800);
-                $('#section2_title03').delay(300).fadeIn(800);
-                $('#section2_title04').delay(500).fadeIn(800);
-                */
             }
             if(index == 3){
                 $('#section3_bg').addClass('fade');
-                /*
-                $('#section3_title01').delay(0).fadeIn(800);
-                $('#section3_title02').delay(200).fadeIn(800);
-                $('#section3_title03').delay(400).fadeIn(800);
-                $('#section3_title04').delay(600).fadeIn(800);
-                */
             }
         },
-
 	});
 });
 </script>
