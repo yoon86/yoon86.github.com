@@ -56,11 +56,12 @@
                     <button class="button" data-filter=".publish, .design">PUBLISH AND DESIGN</button>
                     <button class="button" data-filter=".web">WEB DESIGN</button>
                 </div>
-                <h2>Sort</h2>
-                <div id="sorts" class="button-group">
-                    <button class="button is-checked" data-sort-by="original-order">original order</button>
-                    <button class="button" data-sort-by="name">name</button>
-                    <button class="button" data-sort-by="category">category</button>
+                <div class="displaynone">
+                  <h2>Sort</h2>
+                  <div id="sorts" class="button-group">
+                      <button class="button is-checked" data-sort-by="original-order">original order</button>
+                      <button class="button" data-sort-by="name">name</button>
+                  </div>
                 </div>
             </div>
             <div class="grid">
@@ -127,7 +128,7 @@ var $grid = $('.grid').isotope({
   getSortData: {
     name: '.name',
     number: '.number parseInt',
-    category: '[data-category]',
+    //category: '[data-category]',
     weight: function( itemElem ) {
       var weight = $( itemElem ).find('.weight').text();
       return parseFloat( weight.replace( /[\(\)]/g, '') );
