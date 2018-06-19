@@ -22,82 +22,19 @@
 	  <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/js/jquery.fullPage.js"></script>
     <script type="text/javascript">
-    // init Isotope
-    var $grid = $('.grid').isotope({
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        name: '.name',
-        number: '.number parseInt',
-        category: '[data-category]',
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.weight').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
-      }
-    });
+          		$(document).ready(function() {
+          			$('#fullpage').fullpage({
+          				'verticalCentered': false,
+          				'css3': true,
+          				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
+          				'navigation': true,
+          				'navigationPosition': 'right',
+          				'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple'],
 
-    // filter functions
-    var filterFns = {
-      // show if number is greater than 50
-      numberGreaterThan50: function() {
-        var number = $(this).find('.number').text();
-        return parseInt( number, 10 ) > 50;
-      },
-      // show if name ends with -ium
-      ium: function() {
-        var name = $(this).find('.name').text();
-        //return name.match( /ium$/ );
-      }
-    };
-
-    // bind filter button click
-    $('#filters').on( 'click', 'button', function() {
-      var filterValue = $( this ).attr('data-filter');
-      // use filterFn if matches value
-      filterValue = filterFns[ filterValue ] || filterValue;
-      $grid.isotope({ filter: filterValue });
-    });
-
-    // bind sort button click
-    $('#sorts').on( 'click', 'button', function() {
-      var sortByValue = $(this).attr('data-sort-by');
-      $grid.isotope({ sortBy: sortByValue });
-    });
-
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
-      });
-    });
-    $(document).ready(function(){
-        $('#fullpage').fullpage({
-            anchors: ['01','02','03','04','05','06'],
-    		navigation: true,
-    		navigationPosition: 'right',
-    		navigationTooltips: [''],
-            fitToSectionDelay: 0,
-            fitToSection: false,
-            scrollingSpeed: 800,
-            easing: 'easeInExpo',
-            'afterLoad': function(anchorLink, index){
-                if(index == 1){
-                    $('#section1_bg').addClass('fade');
-                }
-                if(index == 2){
-                    $('#section2_bg').addClass('fade');
-                }
-                if(index == 3){
-                    $('#section3_bg').addClass('fade');
-                }
-            },
-
-    	});
-    });
-    </script>
+          			});
+                      $.fn.fullpage.destroy('all')
+          		});
+      	  </script>
 
 </head>
 <body>
