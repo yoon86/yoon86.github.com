@@ -176,28 +176,7 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
-$(document).ready(function(){
-    $('#fullpage').fullpage({
-        anchors: ['01','02','03','04','05','06'],
-		    navigation: true,
-		    navigationPosition: 'right',
-		    navigationTooltips: [''],
-        fitToSectionDelay: 0,
-        fitToSection: false,
-        scrollingSpeed: 800,
-        easing: 'easeInExpo',
-        'afterLoad': function(anchorLink, index){
-            if(index == 1){
-                $('#section1_bg').addClass('fade');
-            }
-            if(index == 2){
-                $('#section2_bg').addClass('fade');
-            }
-            if(index == 3){
-                $('#section3_bg').addClass('fade');
-            }
-        },
-	});
+
 });
 </script>
 </body>
