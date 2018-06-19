@@ -61,10 +61,15 @@ section.third { width:100%; height:980px; position:relative; text-align:center; 
 .portfolioList > figure > p { overflow: hidden; display: block; height: 300px;}
 .portfolioList > figure > p img {width: 100%;}
 .portfolioList > figure > figcaption { padding:20px 0; text-align:center; }
-.portfolioList .description { display:none; position: absolute; top: 0; left: 0; width: 100%; height: 300px; background: rgba(0,0,0,0); }
+.portfolioList .description {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  display:none; position: absolute; top: 0; left: 0; width: 100%; height: 300px; background: rgba(0,0,0,0); }
 .portfolioList:hover .description {
   display: block;
-  background: rgba(0,0,0,1);
+  background: rgba(0,0,0,.7);
   transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
