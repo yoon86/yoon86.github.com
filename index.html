@@ -189,12 +189,12 @@
 <script src="/js/isotope.pkgd.js"></script>
 <script type="text/javascript">
 
-// init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
   getSortData: {
     name: '.name',
+    //symbol: '.symbol',
     //number: '.number parseInt',
     //category: '[data-category]',
     weight: function( itemElem ) {
@@ -207,15 +207,14 @@ var $grid = $('.grid').isotope({
 // filter functions
 var filterFns = {
   // show if number is greater than 50
-/*
   numberGreaterThan50: function() {
     var number = $(this).find('.number').text();
     return parseInt( number, 10 ) > 50;
-  },*/
+  },
   // show if name ends with -ium
   ium: function() {
     var name = $(this).find('.name').text();
-    //return name.match( /ium$/ );
+    return name.match( /ium$/ );
   }
 };
 
@@ -241,31 +240,6 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
-/*
-$(document).ready(function(){
-    $('#fullpage').fullpage({
-        anchors: ['01','02','03','04','05','06'],
-		    navigation: true,
-		    navigationPosition: 'right',
-		    navigationTooltips: [''],
-        fitToSectionDelay: 0,
-        fitToSection: false,
-        scrollingSpeed: 800,
-        easing: 'easeInExpo',
-        'afterLoad': function(anchorLink, index){
-            if(index == 1){
-                $('#section1_bg').addClass('fade');
-            }
-            if(index == 2){
-                $('#section2_bg').addClass('fade');
-            }
-            if(index == 3){
-                $('#section3_bg').addClass('fade');
-            }
-        },
-
-	});
-});*/
 </script>
 </body>
 
