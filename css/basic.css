@@ -61,7 +61,7 @@ section.third { width:100%; height:980px; position:relative; text-align:center; 
 .portfolioList > figure {width: 100%; margin: 0;}
 .portfolioList > figure > p { overflow: hidden; display: block; height: 175px;}
 .portfolioList > figure > p img {width: 100%;height: 100%; }
-.portfolioList > figure > figcaption { padding:10px 0 20px; text-align:center; }
+.portfolioList > figure > figcaption { padding:10px 0 20px; text-align:center;color:#fff; }
 .portfolioList .description {
   transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
