@@ -21,7 +21,7 @@
     <!--<link rel="stylesheet" media="screen" href="/css/bootstrap.css">-->
 <style>
 .top_menu { width:100%; position:fixed; top:0; }
-.inner { width:100%; box-sizing: border-box; padding: 0 150px; }
+.inner { width:100%; box-sizing: border-box; }
 .inner .col-md-4 { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
 #skills .inner figure h3 { font-size:15px; line-height: 25px; margin-top: 20px; }
 .service ul { font-size:0; }
@@ -30,6 +30,23 @@
 @media all and (max-width: 450px) {
     .inner { padding: 0 20px; }
     .inner .col-md-4 { width:100%; }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 </style>
 </head>
