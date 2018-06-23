@@ -8,7 +8,7 @@ button { border:1px solid #222; background:#fff; }
 .displaynone { display:none; }
 .clear:after {clear:both;display: block;content: '';position: relative;}
 .wrap { width:100%; }
-.wrap > header { display:none; position:fixed; top:0; width:100%;  text-align:center; padding:30px 0; background:rgba(255,2555,255,.5); }
+.wrap > header { position:fixed; top:0; width:100%;  text-align:center; padding:30px 0; background:rgba(255,2555,255,.5); }
 .wrap > header > h1 a { color:#fff; }
 .wrap .container { }
 .wrap .container section { height: 980px;}
