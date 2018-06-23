@@ -5,6 +5,7 @@ div,ul,li,p,span,a,table,td,th,a,h1,h2,h3,h4 { font-family:'Raleway','NanumGothi
 body { min-width:320px; }
 a, h1,h2,h3,h4 { color:#000; text-decoration:none; }
 button { border:1px solid #222; background:#fff; }
+li { list-style: none; }
 .displaynone { display:none; }
 .clear:after {clear:both;display: block;content: '';position: relative;}
 .wrap { width:100%; }
