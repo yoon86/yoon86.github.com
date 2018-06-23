@@ -62,7 +62,7 @@ section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .fp-responsive .fp-auto-height-responsive.fp-section,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell{height:auto !important;}
-.button-group > button { padding:10px 20px; margin:20px 5px; cursor:pointer; }
+.button-group > button { padding:10px 20px; margin:0 5px 30px; cursor:pointer; }
 .button-group > button:hover { background:#222; color:#fff; }
 .portfolioList { position:relative; }
 .portfolioList > figure {width: 100%; margin: 0;position:relative;}
