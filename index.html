@@ -17,23 +17,36 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
-	  <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
+    <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
     <link rel="stylesheet" media="screen" href="/css/bootstrap.css">
-	  <script type="text/javascript" src="/js/jquery.min.js"></script>
-	  <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.fullPage.js"></script>
-	  <script type="text/javascript">
-    		$(document).ready(function() {
-    			$('#fullpage').fullpage({
-    				'verticalCentered': false,
-    				'css3': true,
-    				'sectionsColor': ['#F0F2F4', '#fff', '#fff', '#fff'],
-    				'navigation': true,
-    				'navigationPosition': 'right',
-    				'navigationTooltips': ['Yoonsoyoung', 'Skill', 'Project', 'Contact'],
-    			});
-    		});
-	  </script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.nav-min.js"></script>
+  	<script type="text/javascript">
+      		$(document).ready(function() {
+                  $('#open-nav ').click(function () {
+                      if ($(this).hasClass('fa fa-bars')) {
+                          $(this).removeClass('ffa fa-bars').addClass('fa fa-times');
+                          $('#navs').addClass('open-navs').slideDown('.navone');
+                          $(this).removeClass('nav-half').addClass('nav-full');
+                          $('.nav-menu').show();
+                      } else {
+                          $(this).removeClass('fa fa-times').addClass('fa fa-bars');
+                          $(this).removeClass('nav-full').addClass('nav-half');
+                          $('#navs').removeClass('open-navs').slideUp('.navone');
+                          $('.nav-menu').hide();
+                      }
+                  });
+
+                  //Navigation For Index2
+                  $('#navs').onePageNav({
+                      currentClass: 'active',
+                      filter: ':not(.external)',
+                      scrollThreshold: 0.25,
+                      scrollOffset: 0
+                  });
+      		});
+      </script>
 </head>
 <body>
 <div class="wrap">
@@ -209,7 +222,6 @@
 
 <script src="/js/isotope.pkgd.js"></script>
 <script type="text/javascript">
-
 var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
@@ -224,7 +236,6 @@ var $grid = $('.grid').isotope({
     }
   }
 });
-
 // filter functions
 var filterFns = {
   // show if number is greater than 50
