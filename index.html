@@ -24,7 +24,15 @@
 <body>
 <div class="wrap">
     <header>
-        <h1><a href="./index.html">YOON</a></h1>
+        <div class="top_menu">
+            <ul class="nav navbar-nav" id="navs">
+                <li><a href="#portfolio" class="colapse-menu1">Portfolio</a></li>
+                <li><a href="#service" class="colapse-menu1">Service</a></li>
+                <li class="logo"><a href="#front">YOONSOYOUNG</a></li>
+                <li><a href="#skills" class="colapse-menu1">Skill</a></li>
+                <li><a href="#contact" class="colapse-menu1">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <main class="container" id="fullpage">
         <section class="displaynone section first"  id="section0">
@@ -193,65 +201,14 @@
     </footer>
 </div>
 
-<script src="/js/isotope.pkgd.js"></script>
-<script type="text/javascript">
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows',
-  getSortData: {
-    name: '.name',
-    //symbol: '.symbol',
-    //number: '.number parseInt',
-    //category: '[data-category]',
-    weight: function( itemElem ) {
-      var weight = $( itemElem ).find('.weight').text();
-      return parseFloat( weight.replace( /[\(\)]/g, '') );
-    }
-  }
-});
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.name').text();
-    return name.match( /ium$/ );
-  }
-};
 
-// bind filter button click
-$('#filters').on( 'click', 'button', function() {
-  var filterValue = $( this ).attr('data-filter');
-  // use filterFn if matches value
-  filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
-});
-
-// bind sort button click
-$('#sorts').on( 'click', 'button', function() {
-  var sortByValue = $(this).attr('data-sort-by');
-  $grid.isotope({ sortBy: sortByValue });
-});
-
-// change is-checked class on buttons
-$('.button-group').each( function( i, buttonGroup ) {
-  var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
-    $buttonGroup.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-  });
-});
-</script>
 </body>
 
 </html>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/js/jquery.nav-min.js"></script>
+<script src="/js/isotope.pkgd.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
           $('#open-nav ').click(function () {
@@ -274,5 +231,55 @@ $('.button-group').each( function( i, buttonGroup ) {
               scrollThreshold: 0.25,
               scrollOffset: 0
           });
+    });
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        name: '.name',
+        //symbol: '.symbol',
+        //number: '.number parseInt',
+        //category: '[data-category]',
+        weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.weight').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+      }
+    });
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function() {
+        var number = $(this).find('.number').text();
+        return parseInt( number, 10 ) > 50;
+      },
+      // show if name ends with -ium
+      ium: function() {
+        var name = $(this).find('.name').text();
+        return name.match( /ium$/ );
+      }
+    };
+
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+
+    // bind sort button click
+    $('#sorts').on( 'click', 'button', function() {
+      var sortByValue = $(this).attr('data-sort-by');
+      $grid.isotope({ sortBy: sortByValue });
+    });
+
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
     });
   </script>
