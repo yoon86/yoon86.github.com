@@ -15,15 +15,6 @@ li { list-style: none; }
 .wrap > header .navbar-nav li.logo a { font-size:35px; font-weight:bold; }
 .wrap > header .navbar-nav a { position:relative; display:block; color:#666; padding:10px 15px; font-size:18px; margin:0 15px; }
 .wrap > header .navbar-nav li.active a { color:#f0f2f7; }
-.wrap > header .navbar-nav li.active a > span {
-    display:block;
-    width: 6px;
-    height: 4px;
-    background: #fff;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -3px; }
 .wrap .container section { width:100%; padding:150px 0; text-align:center; }
 .wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
 .grid {width: 90%; margin:0 auto; box-sizing: border-box; }
