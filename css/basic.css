@@ -9,11 +9,11 @@ li { list-style: none; }
 .displaynone { display:none; }
 .clear:after {clear:both;display: block;content: '';position: relative;}
 .wrap { width:100%; }
-.wrap > header { position:fixed; z-index:999; top:0; width:100%;  text-align:center; padding:30px 0; }
+.wrap > header { position:fixed; z-index:999; top:0; width:100%; background-color: #fff; text-align:center; padding:30px 0; }
 .wrap > header .navbar-nav { display:inline-block; margin:0 auto; }
 .wrap > header .navbar-nav li { display:inline-block; }
 .wrap > header .navbar-nav li.logo a { font-size:35px; font-weight:bold; }
-.wrap > header .navbar-nav a { position:relative; display:block; color:#fff; padding:10px 15px; font-size:18px; margin:0 15px; }
+.wrap > header .navbar-nav a { position:relative; display:block; color:#666; padding:10px 15px; font-size:18px; margin:0 15px; }
 .wrap > header .navbar-nav li.active a > span {
     display:block;
     width: 6px;
