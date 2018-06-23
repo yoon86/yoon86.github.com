@@ -11,7 +11,7 @@ button { border:1px solid #222; background:#fff; }
 .wrap > header { position:fixed; z-index:999; top:0; width:100%;  text-align:center; padding:30px 0; }
 .wrap > header .navbar-nav { display:inline-block; margin:0 auto; }
 .wrap > header .navbar-nav a { color:#fff; }
-.wrap .container section { height: 980px;}
+.wrap .inner section { height: 980px;}
 .grid {width: 90%; margin:0 auto; box-sizing: border-box; }
 .grid .element-item { width: 25%; box-sizing: border-box; padding: 0 10px; }
 section.first { width:100%; position:relative; text-align:center; background:#00aeca; }
