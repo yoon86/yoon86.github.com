@@ -21,6 +21,7 @@
     <!--<link rel="stylesheet" media="screen" href="/css/bootstrap.css">-->
 <style>
 .top_menu { width:100%; position:fixed; top:0; }
+.inner .col-md-4 { width:33.3%; }
 </style>
 </head>
 <body>
@@ -36,14 +37,13 @@
             </ul>
         </div>
     </header>
-    <main class="inner">
+    <main class="container">
         <section class="first" id="front">
             front
         </section>
         <section class="second" id="skills">
-            <div class="inner">
-              <h2>SKILL</h2>
-              <div class="container">
+            <h2>SKILL</h2>
+            <div class="inner clear">
                 <div class="col-md-4 t_center">
                   <figure>
                     <p><img src="/img/pc.png" alt="피씨" /></p>
@@ -68,11 +68,11 @@
                     </figcaption>
                   </figure>
                 </div>
-              </div>
             </div>
         </section>
         <section class="third" id="portfolio">
-            <div class="contents" id="contents">
+            <div class="inner">
+                <h2>PORTFOLIO</h2>
                 <div id="filters" class="button-group">
                     <button class="button is-checked" data-filter="*">SHOW ALL</button>
                     <button class="button" data-filter=".home">HOME PAGE</button>
@@ -207,10 +207,16 @@
             </div>
         </section>
         <section class="fourth" id="service">
-            CONTACT
+            <h2>SERVICE</h2>
+            <div class="inner">
+
+            </div>
         </section>
         <section class="fifth" id="contact">
-            CONTACT
+            <h2>CONTACT</h2>
+            <div class="inner">
+
+            </div>
         </section>
     </main>
     <footer>
