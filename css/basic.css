@@ -35,7 +35,7 @@ section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .portfolioList > figure > p { overflow: hidden; display: block; }
 .portfolioList > figure > p img {width: 100%;height: 100%; }
 .portfolioList > figure > figcaption {
-    padding:80px 15px;
+    padding:70px 15px;
     text-align:center;
     color:#fff;
     transition: all .4s ease-in-out;
