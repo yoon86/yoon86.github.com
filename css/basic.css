@@ -29,7 +29,8 @@ section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px
 section.first .saying > p { color:#fff; font-size:20pt; }
 section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .button-group > button { padding:10px 20px; margin:0 5px 30px; cursor:pointer; }
-.button-group > button:hover { background:#222; color:#fff; }
+.button-group > button:hover,
+.button-group > button.is-check { background:#222; color:#fff; }
 .portfolioList { position:relative; }
 .portfolioList > figure { width: 100%; margin: 0;position:relative; cursor:pointer; }
 .portfolioList > figure > p { overflow: hidden; display: block; font-size: 0; line-height: 0; }
