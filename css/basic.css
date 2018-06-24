@@ -31,8 +31,8 @@ section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .button-group > button { padding:10px 20px; margin:0 5px 30px; cursor:pointer; }
 .button-group > button:hover { background:#222; color:#fff; }
 .portfolioList { position:relative; }
-.portfolioList > figure { width: 100%; margin: 0;position:relative; cursor:pointer; line-height: 0; font-size: 0;}
-.portfolioList > figure > p { overflow: hidden; display: block; }
+.portfolioList > figure { width: 100%; margin: 0;position:relative; cursor:pointer; font-size: 0;}
+.portfolioList > figure > p { overflow: hidden; display: block; font-size:12px; }
 .portfolioList > figure > p img {width: 100%;height: 100%; }
 .portfolioList > figure > figcaption {
     padding:70px 15px;
