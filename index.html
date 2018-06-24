@@ -272,22 +272,15 @@
               scrollOffset: 0
           });
     });
-    var $grid = $('.grid').isotope({
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        name: '.name',
-        //symbol: '.symbol',
-        //number: '.number parseInt',
-        //category: '[data-category]',
-        /*
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.weight').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
-        */
-      }
-    });
+$('.grid').isotope({
+  // options
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+}
+});
+
     // filter functions
     var filterFns = {
       // show if number is greater than 50
