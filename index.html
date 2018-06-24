@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
     <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
 <style>
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .top_menu { width:100%; position:fixed; top:0; background:#fff; padding: 10px 0; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
@@ -272,15 +277,23 @@
               scrollOffset: 0
           });
     });
-$('.grid').isotope({
-  // options
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows',
-  getSortData: {
-    name: '.name',
-}
-});
 
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        name: '.name',
+        //symbol: '.symbol',
+        //number: '.number parseInt',
+        //category: '[data-category]',
+        /*
+        weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.weight').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+        */
+      }
+    });
     // filter functions
     var filterFns = {
       // show if number is greater than 50
