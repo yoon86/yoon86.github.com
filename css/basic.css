@@ -21,7 +21,7 @@ li { list-style: none; }
 .grid {width: 90%; margin:0 auto; box-sizing: border-box; }
 .grid .element-item { width: 25%; box-sizing: border-box; padding: 0; }
 section.first { background:#f0f2f7; height:980px;}
-section.second { background:#00aeca;  }
+section.second { background:#00aeca; }
 section.third { background:#f0f2f7; }
 section.fourth { background:#00aeca; }
 section.fifth { background:#f0f2f7; }
