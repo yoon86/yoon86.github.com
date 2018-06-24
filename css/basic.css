@@ -52,4 +52,5 @@ section.first .saying > p.name { font-size:17px; margin-top:30px; }
 }
 .portfolioList > figure:hover > figcaption { background: rgba(0,0,0,.7);}
 .portfolioList > figure > figcaption > p {color:#fff; opacity: 0; }
+.portfolioList > figure > figcaption > p.title { font-size:15px; margin-bottom:3px; font-weight: bold; }
 .portfolioList > figure:hover > figcaption > p { opacity: 1; }
