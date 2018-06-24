@@ -249,6 +249,7 @@
 <script src="/js/isotope.pkgd.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
+        /*
           $('#open-nav ').click(function () {
               if ($(this).hasClass('fa fa-bars')) {
                   $(this).removeClass('ffa fa-bars').addClass('fa fa-times');
@@ -262,6 +263,7 @@
                   $('.nav-menu').hide();
               }
           });
+          */
           //Navigation For Index2
           $('#navs').onePageNav({
               currentClass: 'active',
@@ -278,19 +280,23 @@
         //symbol: '.symbol',
         //number: '.number parseInt',
         //category: '[data-category]',
+        /*
         weight: function( itemElem ) {
           var weight = $( itemElem ).find('.weight').text();
           return parseFloat( weight.replace( /[\(\)]/g, '') );
         }
+        */
       }
     });
     // filter functions
     var filterFns = {
       // show if number is greater than 50
+      /*
       numberGreaterThan50: function() {
         var number = $(this).find('.number').text();
         return parseInt( number, 10 ) > 50;
       },
+      */
       // show if name ends with -ium
       ium: function() {
         var name = $(this).find('.name').text();
@@ -299,6 +305,7 @@
     };
 
     // bind filter button click
+    /*
     $('#filters').on( 'click', 'button', function() {
       var filterValue = $( this ).attr('data-filter');
       // use filterFn if matches value
@@ -311,7 +318,7 @@
       var sortByValue = $(this).attr('data-sort-by');
       $grid.isotope({ sortBy: sortByValue });
     });
-
+    */
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
       var $buttonGroup = $( buttonGroup );
