@@ -10,7 +10,7 @@ li { list-style: none; }
 .displaynone { display:none; }
 .clear:after {clear:both;display: block;content: '';position: relative;}
 .wrap { width:100%; }
-.wrap > header { position:fixed; z-index:999; top:0; width:100%; text-align:center; }
+.wrap > header { position:relative;; z-index:999; top:0; width:100%; min-height: 61px; text-align:center; }
 .wrap > header .navbar-nav { display:inline-block; margin:0 auto; }
 .wrap > header .navbar-nav li { display:inline-block; }
 .wrap > header .navbar-nav li.logo a { font-size:35px; font-weight:bold; }
