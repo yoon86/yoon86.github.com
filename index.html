@@ -20,11 +20,7 @@
     <link rel="stylesheet" href="/css/basic.css" type="text/css" />
     <link rel="stylesheet" href="/css/jquery.fullPage.css" type="text/css" />
 <style>
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+.grid:after { content: ''; display: block; clear: both;}
 .top_menu { width:100%; position:fixed; top:0; background:rgba(255,255,255,.8); padding: 10px 0; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
@@ -34,6 +30,21 @@
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
 .service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#666; font-weight: 700; background: #f1f1f1f1; border-radius: 8px; }
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+}
+.profile > strong { font-size: 28px; display:block; margin-bottom: 5px; }
+.mail { background:url('/img/icon_mail.png') no-repeat 0 0; background-size:33px 24px; padding-left: 36px; }
 @media all and (max-width: 450px) {
     .inner figure h3 { margin:10px auto 25px; }
     .grid .element-item  { width: 50%; }
@@ -69,20 +80,7 @@
   .inner { width: 1218px; }
 }
 
-.profile {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    display: inline-block;
-    text-align: center;
-    color: #fff;
-    font-size: 23px;
-}
-.profile > strong { font-size: 28px; display:block; margin-bottom: 5px; }
+
 </style>
 </head>
 <body>
