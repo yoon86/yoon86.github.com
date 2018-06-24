@@ -1,5 +1,5 @@
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
-html { width:100%; height:100%; }
+html, body { width:100%; height:100%; }
 body,code {font:0.75em 'Raleway','NanumGothic',AppleGothic,sans-serif; color:#353535; background:#fff; }
 div,ul,li,p,span,a,table,td,th,a,h1,h2,h3,h4 { font-family:'Raleway','NanumGothic',AppleGothic,sans-serif; padding: 0;margin: 0;}
 body { min-width:320px; }
@@ -9,26 +9,27 @@ figure, figcaption {padding: 0; margin: 0;}
 li { list-style: none; }
 .displaynone { display:none; }
 .clear:after {clear:both;display: block;content: '';position: relative;}
-.wrap { width:100%; }
+.wrap { width:100%; height: 100%; min-width:320px; box-sizing: border-box; }
 .wrap > header { position:relative;; z-index:999; top:0; width:100%; min-height: 61px; text-align:center; }
 .wrap > header .navbar-nav { display:inline-block; margin:0 auto; }
 .wrap > header .navbar-nav li { display:inline-block; }
 .wrap > header .navbar-nav li.logo a { font-size:35px; font-weight:bold; }
 .wrap > header .navbar-nav a { position:relative; display:block; color:#666; padding:10px 15px; font-size:18px; margin:0 15px; }
 .wrap > header .navbar-nav li.active a { color:#00aeca; }
-.wrap .container .content {height:100%; }
+.wrap .container { height: 100%; }
+.wrap .container .content { height:100%; }
 .wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
 .wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
 .grid {width: 90%; margin:0 auto; box-sizing: border-box; }
 .grid .element-item { width: 25%; height:200px; box-sizing: border-box; padding: 0; }
-section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
-section.second { background:#00aeca; }
-section.third { background:#f0f2f7; }
-section.fourth { background:#00aeca; }
-section.fifth { background:#f0f2f7; }
-section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px;  }
-section.first .saying > p { color:#fff; font-size:20pt; }
-section.first .saying > p.name { font-size:17px; margin-top:30px; }
+.wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
+.wrap .container section.second { background:#00aeca; }
+.wrap .container section.third { background:#f0f2f7; }
+.wrap .container section.fourth { background:#00aeca; }
+.wrap .container section.fifth { background:#f0f2f7; }
+.wrap .container section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px;  }
+.wrap .container section.first .saying > p { color:#fff; font-size:20pt; }
+.wrap .container section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .button-group > button { padding:10px 20px; margin:0 5px 30px; cursor:pointer; }
 .button-group > button:hover,
 .button-group > button.is-checked { background:#222; color:#fff; }
