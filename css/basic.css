@@ -16,11 +16,12 @@ li { list-style: none; }
 .wrap > header .navbar-nav li.logo a { font-size:35px; font-weight:bold; }
 .wrap > header .navbar-nav a { position:relative; display:block; color:#666; padding:10px 15px; font-size:18px; margin:0 15px; }
 .wrap > header .navbar-nav li.active a { color:#00aeca; }
+.wrap .container .content {height:100%; }
 .wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
 .wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
 .grid {width: 90%; margin:0 auto; box-sizing: border-box; }
 .grid .element-item { width: 25%; height:200px; box-sizing: border-box; padding: 0; }
-section.first { height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
+section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
 section.second { background:#00aeca; }
 section.third { background:#f0f2f7; }
 section.fourth { background:#00aeca; }
