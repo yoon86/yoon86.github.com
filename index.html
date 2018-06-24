@@ -34,25 +34,31 @@
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
 .service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#666; font-weight: 700; background: #f1f1f1f1; border-radius: 8px; }
-@media all and (max-width: 450px) {
-    .inner { padding: 0 20px; }
+@media all and (min-width: 450px) {
+    .inner { width:320px; }
     .inner .col-md-4 { width:100%; }
     .grid .element-item  { width: 50%; }
 }
-@media screen and (max-width: 630px) {
-    .inner { width: 600px; }
-    .grid .element-item  { width: 33.3%; }
+@media (min-width: 768px) {
+  .inner {
+    width: 750px;
+  }
+  .grid .element-item  { width: 33.3%; }
 }
 
-@media screen and (max-width: 960px) {
-    .inner { width: 930px; }
-    .grid .element-item  { width: 33.3%; }
-
+@media (min-width: 992px) {
+  .inner {
+    width: 970px;
+  }
+  .grid .element-item  { width: 33.3%; }
 }
-@media screen and (min-width: 1200px) {
-    section.second .inner { width:1218px; margin:0 auto; }
 
+@media (min-width: 1200px) {
+  .cinner {
+    width: 1170px;
+  }
 }
+
 .profile {
     position: absolute;
     top: 50%;
