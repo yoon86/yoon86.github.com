@@ -136,7 +136,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .wrap > header .navbar-nav a { margin:0 }
 }
 @media (min-width: 644px) {
-  .inner { width: 940px; }
+  .inner { width: 640px; }
   .grid .element-item  { width: 50%; }
 }
 @media (min-width: 768px) {
