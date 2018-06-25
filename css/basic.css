@@ -50,7 +50,9 @@ li { list-style: none; }
     padding: 20px 10px;
     word-break: keep-all;
 }
-.element-item .folio:hover a { opacity: 1;}
+.element-item .folio:hover a { opacity: 0.7;}
+.element-item .folio a > p { color: #fff; opacity: 0; }
+.element-item .folio:hover a > p { opacity: 1;}
 .wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
 .wrap .container section.second { background:#00aeca; }
 .wrap .container section.third { background:#f0f2f7; height:auto; }
