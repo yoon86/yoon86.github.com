@@ -28,7 +28,7 @@ li { list-style: none; }
 .grid { width:100%; }
 /* clear fix */
 .grid:after { content: ''; display: block; clear: both; }
-.element-item { position: relative; float: left; width: 24%; height:auto; color: #fff; }
+.element-item { position: relative; float: left; width: 25%; height:auto; color: #fff; }
 .element-item img { width:100%; }
 .element-item > * { margin: 0; padding: 0;}
 .element-item .folio { position:relative; }
