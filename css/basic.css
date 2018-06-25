@@ -132,4 +132,5 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
 
 @media (min-width: 1300px) {
   .inner { width: 1340px; }
+  .grid .element-item  { width: 25%; }
 }
