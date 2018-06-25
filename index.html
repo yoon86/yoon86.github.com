@@ -199,54 +199,52 @@
 <script src="/js/isotope.pkgd.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-          //Navigation For Index2
-          $('#navs').onePageNav({
-              currentClass: 'active',
-              filter: ':not(.external)',
-              scrollThreshold: 0.25,
-              scrollOffset: 0
+        //Navigation For Index2
+        $('#navs').onePageNav({
+            currentClass: 'active',
+            filter: ':not(.external)',
+            scrollThreshold: 0.25,
+            scrollOffset: 0
+        });
+        var $grid = $('.grid').isotope({
+          itemSelector: '.element-item',
+          layoutMode: 'fitRows',
+          getSortData: {
+            name: '.name',
+            //symbol: '.symbol',
+            //number: '.number parseInt',
+            //category: '[data-category]',
+            /*
+            weight: function( itemElem ) {
+              var weight = $( itemElem ).find('.weight').text();
+              return parseFloat( weight.replace( /[\(\)]/g, '') );
+            }
+            */
+          }
+        });
+        // filter functions
+        var filterFns = {
+          // show if name ends with -ium
+          ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+          }
+        };
+
+        // bind filter button click
+        $('#filters').on( 'click', 'button', function() {
+          var filterValue = $( this ).attr('data-filter');
+          // use filterFn if matches value
+          filterValue = filterFns[ filterValue ] || filterValue;
+          $grid.isotope({ filter: filterValue });
+        });
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+          var $buttonGroup = $( buttonGroup );
+          $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
           });
-
-
-    var $grid = $('.grid').isotope({
-      itemSelector: '.element-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        name: '.name',
-        //symbol: '.symbol',
-        //number: '.number parseInt',
-        //category: '[data-category]',
-        /*
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.weight').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
-        */
-      }
-    });
-    // filter functions
-    var filterFns = {
-      // show if name ends with -ium
-      ium: function() {
-        var name = $(this).find('.name').text();
-        return name.match( /ium$/ );
-      }
-    };
-
-    // bind filter button click
-    $('#filters').on( 'click', 'button', function() {
-      var filterValue = $( this ).attr('data-filter');
-      // use filterFn if matches value
-      filterValue = filterFns[ filterValue ] || filterValue;
-      $grid.isotope({ filter: filterValue });
-    });
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
-      });
-    });
+        });
     });
   </script>
