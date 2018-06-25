@@ -51,7 +51,7 @@ li { list-style: none; }
 .wrap .container section.third { background:#f0f2f7; height:auto; }
 .wrap .container section.fourth { background:#00aeca; }
 .wrap .container section.fifth { background:#f0f2f7; }
-.wrap .container section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px;  }
+.wrap .container section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px; }
 .wrap .container section.first .saying > p { color:#fff; font-size:20px; }
 .wrap .container section.first .saying > p.name { font-size:17px; margin-top:30px; }
 .button-group > button { padding:10px 20px; margin:0 5px 30px; cursor:pointer; }
