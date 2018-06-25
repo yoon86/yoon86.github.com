@@ -99,7 +99,7 @@ li { list-style: none; }
 .service { margin:50px auto 30px; }
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
-.service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#666; font-weight: 700; background: #f1f1f1f1; border-radius: 8px; }
+.service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#666; font-weight: 700; background: #f1f1f1; border-radius: 8px; }
 .profile {
     position: absolute;
     top: 50%;
