@@ -47,7 +47,7 @@ li { list-style: none; }
   padding: 0;
 }
 .wrap .container section.first { position:relative; /*padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover;*/ }
-.wrap .container section.first > img { width:100%; position:absolute; top:0; left:0; }
+.wrap .container section.first > img { width:100%; position:absolute; top:0; left:0; display:block; }
 .wrap .container section.second { background:#00aeca; }
 .wrap .container section.third { background:#f0f2f7; height:auto; }
 .wrap .container section.fourth { background:#00aeca; }
