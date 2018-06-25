@@ -112,12 +112,12 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
 @media (min-width: 644px) {
   .inner { width: 640px; }
   .grid .element-item  { width: 50%; }
-  .wrap .container section.first { height:350px; }
+  .wrap .container section.first { background-size: 100%; }
 }
 @media (min-width: 768px) {
   .inner { width: 750px; }
   .grid .element-item { width: 33.3%; }
-  .wrap .container section.first { height:420px; }
+  .wrap .container section.first { background-size: 100%;}
 
 }
 @media (min-width: 992px) {
