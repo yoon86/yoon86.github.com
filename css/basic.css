@@ -26,7 +26,8 @@ li { list-style: none; }
 .grid .element-item { width: 25%; height:auto; box-sizing: border-box; padding: 0; }
 */
 .grid {
-  width:100%; margin:0 auto; 
+  border: 1px solid #333;
+  width:1200px;
 }
 /* clear fix */
 .grid:after {
