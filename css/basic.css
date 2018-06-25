@@ -49,7 +49,7 @@ li { list-style: none; }
     -o-transition: all .4s ease-in-out;
     box-sizing: border-box;
     padding: 20px 10px;
-    word-break: keep-all;
+    word-break: keep-all; 
 }
 .element-item .folio:hover a { background: rgba(0,0,0,.7);}
 .element-item .folio a > p { color: #fff; opacity: 0; }
