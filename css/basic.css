@@ -21,8 +21,37 @@ li { list-style: none; }
 .wrap .container .content { height:100%; }
 .wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
 .wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
-.grid {margin:0 auto; box-sizing: border-box; }
+/*
+.grid {margin:0 auto; width:100%; box-sizing: border-box; }
 .grid .element-item { width: 25%; height:auto; box-sizing: border-box; padding: 0; }
+*/
+.grid {
+  border: 1px solid #333;
+  width:1200px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.element-item {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+}
+.element-item img { width:100%; }
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
 .wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 0 0; background-size: cover; }
 .wrap .container section.second { background:#00aeca; }
 .wrap .container section.third { background:#f0f2f7; height:auto; }
