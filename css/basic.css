@@ -80,9 +80,9 @@ li { list-style: none; }
 .grid:after { content: ''; display: block; clear: both;}
 .top_menu { width:100%; position:fixed; top:0; background:rgba(255,255,255,.8); padding: 10px 0; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
-.inner { width:100%; margin:0 auto; box-sizing: border-box; }
-.inner .col-md-4 { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
-.inner figure h3 { font-size:15px; line-height: 25px; margin-top: 20px; }
+.second .inner { width:100%; margin:0 auto; box-sizing: border-box; }
+.second .inner .list { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
+.second .inner figure h3 { font-size:18px; line-height: 25px; margin-top: 20px; }
 .service { margin:50px auto 30px; }
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
@@ -112,7 +112,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
     .portfolioList > figure > figcaption { padding:0; }
     .portfolioList > figure > figcaption > p.subject  { font-size: 13px; margin-top:30px; }
-    .inner .col-md-4 { width:100%; }
+    .second .inner .list { width:100%; }
     .top_menu { padding: 7px 0; }
     .top_menu h1 { font-size: 20px; line-height: 30px; }
     .wrap > header .navbar-nav a { padding: 7px 15px; font-size:13px; }
