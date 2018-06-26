@@ -122,6 +122,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .second .inner .list { width:100%; }
     .second .inner figure h3 { margin:10px auto 30px; }
     .service { margin:20px auto; }
+    .button-group { margin: 0 0 20px;}
     .button-group > button { margin:3px; font-size:12px; }
     .wrap .container section .button-group { margin: 0 0 20px; }
     .grid .element-item  { width: 50%; }
@@ -143,6 +144,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .second .inner .list { width:100%; }
     .second .inner figure h3 { margin:10px auto 30px; }
     .service { margin:20px auto; }
+    .button-group { margin: 0 0 20px;}
     .button-group > button { margin:3px; font-size:12px; }
     .grid .element-item  { width: 50%; }
     .element-item .folio a { position:relative; background: none; padding: 5px 0 15px ; line-height: 16px; opacity: 1; color:#333; }
