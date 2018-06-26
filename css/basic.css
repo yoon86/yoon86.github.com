@@ -106,7 +106,27 @@ li { list-style: none; }
 .profile > strong { font-size: 28px; display:block; margin-bottom: 5px; }
 .mail { background:url('/img/icon_mail.png') no-repeat 0 5px; background-size:18px; display: inline-block; padding-left: 25px; color:#fff; font-size:17px; }
 footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; color:#fff; background:#333; }
-@media (max-width: 450px) and (max-width: 640px) {
+@media (max-width: 450px) {
+    .top_menu { padding: 7px 0; }
+    .top_menu h1 { font-size: 20px; line-height: 30px; }
+    .profile { font-size: 18px; }
+    .profile > strong { font-size: 16px; display:block; margin-bottom: 5px; }
+    .wrap > header .navbar-nav a { margin:0 padding: 7px 15px; font-size:13px; }
+    .wrap .container section { padding:80px 0; height:auto; }
+    .wrap .container section.first { height: 300px;}
+    .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
+    .second .inner .list { width:100%; }
+    .second .inner figure h3 { margin:10px auto 30px; }
+    .service { margin:20px auto; }
+    .button-group > button { margin-bottom:10px; }
+    .grid .element-item  { width: 50%; }
+    .element-item .folio a { position:relative; background: none; padding: 5px 0 15px ; line-height: 16px; opacity: 1; color:#333; }
+    .element-item .folio:hover a { background: none; }
+    .element-item .folio a > p { color:#666; position: relative; font-size:11px; opacity: 1;top: auto; left: auto; transform: none;}
+    .element-item .folio a > p.subject { font-size:12px;  color:#333;}
+    .element-item .folio:hover  a > p.subject{ }
+}
+@media (max-width: 640px) {
     .top_menu { padding: 7px 0; }
     .top_menu h1 { font-size: 20px; line-height: 30px; }
     .profile { font-size: 18px; }
