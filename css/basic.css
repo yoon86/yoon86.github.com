@@ -21,6 +21,7 @@ li { list-style: none; }
 .wrap .container .content { height:100%; }
 .wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
 .wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
+.wrap .container section.third h2 { color:#333; }
 /*
 .grid {margin:0 auto; width:100%; box-sizing: border-box; }
 .grid .element-item { width: 25%; height:auto; box-sizing: border-box; padding: 0; }
@@ -49,6 +50,7 @@ li { list-style: none; }
     -o-transition: all .4s ease-in-out;
     box-sizing: border-box;
     word-break: keep-all;
+    font-family: 'NanumGothic';
 }
 .element-item .folio:hover a { background: rgba(0,0,0,.7);}
 .element-item .folio a > p {
@@ -65,6 +67,7 @@ li { list-style: none; }
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
+    font-family: 'NanumGothic';
 }
 .element-item .folio a > p.subject { top:35%; font-size: 13px; font-weight: 700; }
 .element-item .folio:hover a > p { opacity: 1;}
@@ -119,8 +122,9 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .second .inner figure h3 { margin:10px auto 30px; }
     .service { margin:20px auto; }
     .button-group > button { margin-bottom:10px; font-size:12px; }
+    .wrap .container section .button-group { margin: 0 0 20px; }
     .grid .element-item  { width: 50%; }
-    .element-item .folio a { position:relative; background: none; padding: 5px 0 15px ; line-height: 16px; opacity: 1; color:#333; }
+    .element-item .folio a { position:relative; background: none; padding: 5px 0 25px ; line-height: 16px; opacity: 1; color:#333; }
     .element-item .folio:hover a { background: none; }
     .element-item .folio a > p { color:#666; position: relative; font-size:11px; opacity: 1;top: auto; left: auto; transform: none;}
     .element-item .folio a > p.subject { font-size:12px;  color:#333;}
