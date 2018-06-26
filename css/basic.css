@@ -129,6 +129,9 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
   .inner { width: 640px; }
   .grid .element-item  { width: 50%; }
 }
+@media (max-width: 644px) {
+  .second .inner .list { width:100%: }
+}
 @media (min-width: 768px) {
   .inner { width: 750px; }
   .grid .element-item { width: 33.3%; }
