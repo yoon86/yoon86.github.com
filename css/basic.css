@@ -48,11 +48,13 @@ li { list-style: none; }
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     box-sizing: border-box;
-    padding: 20px 10px;
     word-break: keep-all;
 }
 .element-item .folio:hover a { background: rgba(0,0,0,.7);}
 .element-item .folio a > p {
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 10px;
     color: #fff;
     opacity: 0;
     transition: all .4s ease-in-out;
