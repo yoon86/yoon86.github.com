@@ -19,9 +19,6 @@ li { list-style: none; }
 .wrap > header .navbar-nav li.active a { color:#00aeca; }
 .wrap .container { height: 100%; }
 .wrap .container .content { height:100%; }
-.wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
-.wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
-.wrap .container section.third h2 { color:#333; }
 .top_menu { width:100%; position:fixed; top:0; background:rgba(255,255,255,.8); padding: 10px 0; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
@@ -90,9 +87,12 @@ li { list-style: none; }
 }
 .element-item .folio a > p.subject { top:35%; font-size: 13px; font-weight: 700; }
 .element-item .folio:hover a > p { opacity: 1;}
+.wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
+.wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
+.wrap .container section.third h2 { color:#333; }
 .wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 50% 50%; background-size: cover; }
 .wrap .container section.second { background:#00aeca; }
-.wrap .container section.third { background:#f0f2f7; height:auto; }
+.wrap .container section.third { background:#f0f2f7; height:auto; padding:150px 0 30px;  }
 .wrap .container section.fourth { background:#00aeca; }
 .wrap .container section.fifth { background:#f0f2f7; }
 .wrap .container section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px; }
@@ -103,7 +103,7 @@ li { list-style: none; }
 .button-group > button:hover,
 .button-group > button.is-checked { background:#222; color:#fff; }
 .grid:after { content: ''; display: block; clear: both;}
-.info_txt { width:100%; text-align: center; padding: 0 0 30px; background: #f0f2f7; }
+.info_txt { width:100%; text-align: center; padding: 0 0 100px; background: #f0f2f7; }
 
 .mail { background:url('/img/icon_mail.png') no-repeat 0 5px; background-size:18px; display: inline-block; padding-left: 25px; color:#fff; font-size:17px; }
 footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; color:#fff; background:#333; position: fixed; bottom:0; }
