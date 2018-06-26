@@ -83,7 +83,7 @@ li { list-style: none; }
 .top_menu { width:100%; position:fixed; top:0; background:rgba(255,255,255,.8); padding: 10px 0; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
-.inner .info_txt { font-size:12px; color:#f5f5f5; }
+.inner .info_txt { font-size:12px; color:#666; font-weight:bold; margin: 30px auto 0;}
 .second .inner .list { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
 .second .inner figure h3 { font-size:18px; line-height: 25px; margin: 20px 0 0; }
 .service { margin:50px auto 30px; }
@@ -134,7 +134,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
   .grid .element-item  { width: 50%; }
 }
 @media (max-width: 644px) {
-  .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }    
+  .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
   .second .inner .list { width:100%; }
   .second .inner figure h3 { margin:10px auto 30px; }
   .service { margin:20px auto; }
