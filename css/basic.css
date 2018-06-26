@@ -135,6 +135,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
 }
 @media (max-width: 644px) {
   .second .inner .list { width:100%: }
+  .element-item .folio a { line-height: 16px;  }
 }
 @media (min-width: 768px) {
   .inner { width: 750px; }
