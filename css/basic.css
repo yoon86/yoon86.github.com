@@ -132,13 +132,11 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
 @media (min-width: 768px) {
   .inner { width: 750px; }
   .grid .element-item { width: 33.3%; }
-
 }
 @media (min-width: 992px) {
   .inner { width: 970px; }
   .grid .element-item  { width: 33.3%; }
 }
-
 @media (min-width: 1300px) {
   .inner { width: 1340px; }
   .grid .element-item  { width: 25%; }
