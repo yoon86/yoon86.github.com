@@ -112,7 +112,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile { font-size: 16px; }
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .wrap > header .navbar-nav a { margin:0 ;padding: 7px 10px; font-size:13px; }
-    .wrap .container section { padding:80px 0; height:auto; }
+    .wrap .container section { padding:100px 0; height:auto; }
     .wrap .container section.first { height: 300px;}
     .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
     .second .inner .list { width:100%; }
@@ -132,7 +132,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile { font-size: 16px; }
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .wrap > header .navbar-nav a { margin:0 ; padding: 7px 10px; font-size:13px; }
-    .wrap .container section { padding:80px 0; height:auto; }
+    .wrap .container section { padding:100px 0; height:auto; }
     .wrap .container section.first { height: 300px;}
     .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
     .second .inner .list { width:100%; }
