@@ -120,7 +120,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .grid .element-item  { width: 50%; }
     .element-item .folio a { position:relative; background: none; padding: 5px 0 15px ; line-height: 16px; opacity: 1; color:#333; }
     .element-item .folio.hover a { background: none;  color:#333; }
-    .element-item .folio a > p.subject { color:#333; }
+    .element-item .folio a > p.subject { color:#333; position: relative;}
     .element-item .folio:hover  a > p.subject{ color:#333; }
 }
 @media (min-width: 450px) {
