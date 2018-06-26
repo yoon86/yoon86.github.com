@@ -117,8 +117,9 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .wrap > header .navbar-nav a { margin:0 ;padding: 7px 10px; font-size:13px; }
     .wrap .container section { padding:100px 0; height:auto; }
-    .wrap .container section.third { padding:100px 0 50px;}
     .wrap .container section.first { height: 300px;}
+    .wrap .container section.third { padding:100px 0 50px;}
+    .wrap .container section.fourth { padding:100px 0 130px; }
     .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
     .second .inner .list { width:100%; }
     .second .inner figure h3 { margin:10px auto 30px; }
@@ -140,8 +141,9 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .wrap > header .navbar-nav a { margin:0 ; padding: 7px 10px; font-size:13px; }
     .wrap .container section { padding:100px 0; height:auto; }
-    .wrap .container section.third { padding:100px 0 50px;}    
     .wrap .container section.first { height: 300px;}
+    .wrap .container section.third { padding:100px 0 50px;}
+    .wrap .container section.fourth { padding:100px 0 130px; }
     .wrap .container section h2 { font-size:30px; padding: 0 0 50px; }
     .second .inner .list { width:100%; }
     .second .inner figure h3 { margin:10px auto 30px; }
