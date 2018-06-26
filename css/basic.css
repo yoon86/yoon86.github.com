@@ -118,6 +118,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .service { margin:20px auto; }
     .button-group > button { margin-bottom:10px; }
     .grid .element-item  { width: 50%; }
+    .element-item .folio a { position:relative; background: none; padding: 5px 0 15px ; line-height: 16px; }
     .element-item .folio a > p.subject {}
 }
 @media (min-width: 450px) {
