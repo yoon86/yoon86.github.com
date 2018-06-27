@@ -93,8 +93,7 @@ li { list-style: none; }
 .wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 50% 50%; background-size: cover; }
 .wrap .container section.second { background:#00aeca; }
 .wrap .container section.third { background:#f0f2f7; height:auto; padding:150px 0 20px;  }
-.wrap .container section.fourth { background:#00aeca; }
-.wrap .container section.fifth { background:#f0f2f7; }
+.wrap .container section.fourth { background:#00aeca; padding:150px 0 180px; }
 .wrap .container section.first .saying { position:absolute; top:40%; left:50%; margin-left:-220px; width:440px; }
 .wrap .container section.first .saying > p { color:#fff; font-size:20px; }
 .wrap .container section.first .saying > p.name { font-size:17px; margin-top:30px; }
