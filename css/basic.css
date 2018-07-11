@@ -42,7 +42,8 @@ li { list-style: none; }
     font-size: 23px;
 }
 .profile > strong { font-size: 28px; display:block; margin-bottom: 5px; }
-.profile > strong.second {font-size: 20px; padding:20px 0 0; }
+.profile .second strong {font-size: 20px; padding:20px 0 0; }
+.profile .second p { font-size: 18px;}
 .grid { width:100%; }
 /* clear fix */
 .grid:after { content: ''; display: block; clear: both; }
