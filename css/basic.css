@@ -41,6 +41,7 @@ li { list-style: none; }
     color: #fff;
     font-size: 23px;
 }
+.profile .like { margin:20px 0 0; }
 .profile > strong { font-size: 28px; display:block; margin-bottom: 5px; }
 .profile .like strong {font-size: 20px; padding:20px 0 0; }
 .profile .like p { font-size: 18px;}
