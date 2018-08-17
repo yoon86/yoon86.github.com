@@ -117,6 +117,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .profile .like { margin:5px 0 0; }
     .profile .like strong { font-size: 16px; }
+    .profile .like p { font-size:15px; }
     .wrap > header .navbar-nav a { margin:0 ;padding: 7px 10px; font-size:13px; }
     .wrap .container section { padding:100px 0; height:auto; }
     .wrap .container section.first { height: 300px;}
@@ -143,6 +144,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .profile > strong { font-size: 18px; display:block; margin-bottom: 5px; }
     .profile .like { margin:5px 0 0; }
     .profile .like strong { font-size: 16px; }
+    .profile .like p { font-size:15px; }
     .wrap > header .navbar-nav a { margin:0 ; padding: 7px 10px; font-size:13px; }
     .wrap .container section { padding:100px 0; height:auto; }
     .wrap .container section.first { height: 300px;}
