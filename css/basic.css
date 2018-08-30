@@ -23,7 +23,7 @@ li { list-style: none; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
 .second .inner .list { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
-.second .inner figure h3 { font-size:18px; color:#fcffd9; line-height: 25px; margin: 20px 0 0; }
+.second .inner figure h3 { font-size:18px; color:#fcffd9; line-height: 25px; margin: 20px 0 0; font-weight:normal; }
 .service { margin:50px auto 30px; }
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
@@ -140,7 +140,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .element-item .folio a > p { color:#444; position: relative; font-size:11px; opacity: 1;top: auto; left: auto; transform: none;}
     .element-item .folio a > p.subject { font-size:12px;  color:#333; padding: 0 0 3px; }
     footer { font-size:11px; }
-    .downArea { margin:0 auto; }
+    .downArea { margin:3px auto 0; }
     .downArea a { padding:12px 17px; }
 }
 @media (max-width: 640px) {
@@ -168,7 +168,7 @@ footer { padding:10px 0; width:100%; text-align:center; box-sizing: border-box; 
     .element-item .folio a > p { color:#444; position: relative; font-size:11px; opacity: 1;top: auto; left: auto; transform: none;}
     .element-item .folio a > p.subject { font-size:12px;  color:#333; padding: 0 0 3px;}
     footer { font-size:11px; }
-    .downArea { margin:0 auto; }
+    .downArea { margin:3px auto 0; }
     .downArea a { padding:12px 17px; }
 }
 @media (min-width: 450px) {
