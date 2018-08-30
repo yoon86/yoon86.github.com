@@ -47,7 +47,7 @@ li { list-style: none; }
 .profile .like p { font-size: 18px;}
 .grid { width:100%; }
 .downArea { margin:15px auto; }
-.downArea a { display:inline-block; font-size:12px; margin:0 5px; color:#fff; background:#222; padding:15px 20px; }
+.downArea a { display:inline-block; font-size:12px; margin:3px 0; color:#fff; background:#222; padding:15px 20px; }
 /* clear fix */
 .grid:after { content: ''; display: block; clear: both; }
 .element-item { position: relative; float: left; width: 25%; height:auto; color: #fff; }
