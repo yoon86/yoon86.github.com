@@ -23,11 +23,11 @@ li { list-style: none; }
 .top_menu h1 { font-size:22px; line-height: 35px; color: #777; }
 .inner { width:100%; margin:0 auto; box-sizing: border-box; }
 .second .inner .list { width:33.3%; box-sizing: border-box; padding:0 20px; float: left;}
-.second .inner figure h3 { font-size:18px; line-height: 25px; margin: 20px 0 0; }
+.second .inner figure h3 { font-size:18px; color:#fcffd9; line-height: 25px; margin: 20px 0 0; }
 .service { margin:50px auto 30px; }
 .service ul { font-size:0; }
 .service ul li { display:inline-block; margin:5px; }
-.service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#666; font-weight: 700; background: #f1f1f1; border-radius: 8px; }
+.service ul li > span { display:block; line-height: 28px; padding:0 15px; font-size: 13px; color:#444; font-weight: 700; background: #f1f1f1; border-radius: 8px; }
 .profile {
     position: absolute;
     top: 50%;
