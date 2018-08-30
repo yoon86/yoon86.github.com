@@ -93,7 +93,7 @@ li { list-style: none; }
 .element-item .folio a > p.subject { top:35%; font-size: 13px; font-weight: 700; }
 .element-item .folio:hover a > p { opacity: 1;}
 .wrap .container section { width:100%; padding:150px 0; text-align:center; position:relative;}
-.wrap .container section h2 { color:#fff; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
+.wrap .container section h2 { color:#fcffd9; letter-spacing: 5px; padding:0 0 70px; font-size: 55px; }
 .wrap .container section.third h2 { color:#333; }
 .wrap .container section.first { padding:0; height:100%; background:url('/img/bg_img04.jpg') no-repeat 50% 50%; background-size: cover; }
 .wrap .container section.second { background:#b53a00; }
